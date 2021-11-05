@@ -1,0 +1,162 @@
+\documentclass[letterpaper, 12pt]{article}
+
+%%%%%%% PACKAGES %%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2cm]{geometry}
+\usepackage[spanish, es-nodecimaldot]{babel}
+\usepackage{blindtext}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{multirow}
+\usepackage{mathrsfs}
+
+
+% EASY MATH
+\usepackage[thinc]{esdiff} %derivadas faciles
+\usepackage{physics} %algunos simbolos de derivadas
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsbsy}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{siunitx}
+
+% DOCUMENT PROPERTIES
+\usepackage{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cite}
+\usepackage{enumitem}
+\usepackage{epsfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[strict]{changepage}
+\usepackage{booktabs}
+\usepackage{float} 
+%\usepackage[document]{ragged2e} %para justificado de párrafo
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{ifthen}
+\usepackage{commath}
+\usepackage{esint}
+\usepackage{mathtools}
+\usepackage{listing}
+\usepackage{multirow}
+\usepackage{tabto}
+\usepackage{csquotes}
+\usepackage{xcolor}
+\usepackage{advdate}
+\usepackage[acronym, toc]{glossaries}
+%\usepackage[siunitx]{circuitikzgit}
+%\usepackage{xfrac}
+\selectlanguage{spanish}
+
+%path donde se encuentran las imagenes
+\graphicspath{ {./figuras/} }
+
+%-------------------------------------------------
+%PORTADA
+%-------------------------------------------------
+
+\begin{document}
+\begin{center}
+\begin{Large}
+{\color{white} mmmmmmm} \bigskip\\
+\begin{figure}[H]	
+\centering
+\includegraphics[scale=0.9]{bannerfiuady.png}
+\end{figure}\bigskip
+\textsc{FACULTAD DE INGENIERÍA}\bigskip\\
+Periodo agosto - diciembre 2021 \bigskip\\
+{\color{white} mmmmmmm} \\
+{\color{white} mmmmmmm} \bigskip\\
+\textsc{Materia} \bigskip\\
+Profesor \\
+{\color{white} mmmmmmm} \bigskip\\
+\textsl{Tarea } \bigskip\\
+{\color{white} mmmmmmm} \bigskip\\
+Erick Al. Casanova Cortés\\
+
+\normalsize
+Ingeniería Física\\
+\small
+a15014866@alumnos.uady.mx\\
+\Large
+\rule{0.5\paperwidth}{0.5pt} \\ \bigskip
+{\AdvanceDate\today}
+\end{Large}
+\end{center}
+\newpage
+
+
+\pagenumbering{arabic}
+%\clearpage\maketitle
+\setcounter{page}{1}
+
+
+%%%%%%%%%% INDEX
+\tableofcontents
+\listoffigures
+\listoftables
+
+\newpage
+\pagenumbering{arabic}
+
+%%% Contenido principal %%%%
+
+%-------------------------------------------------
+%Inicio del documento
+%-------------------------------------------------
+
+
+
+\Large
+\textit{ \textbf{Resumen}}
+\normalsize
+
+\section{Objetivo}
+En esta sección se describe el objetivo general de la práctica, así como los objetivos específicos que se pretende lograr con la implementación del dispositivo o circuito.\\
+
+\textit{ \textbf{Objetivo general}}
+
+Diseñar un modelo didáctico capaz de generar campos magnéticos constantes y variables en el tiempo, controlado por el usuario a través de una interfaz gráfica amigable e intuitiva.
+En el párrafo de arriba hay un ejemplo de un objetivo redactado. Los puntos más importantes son: 
+
+\begin{itemize}
+
+    \item debe contener el propósito final del circuito o dispositivo (responde a la pregunta ¿para qué sirve?),
+    \item debe ser una sola oración,
+    \item debe tener solamente un verbo.
+    \end{itemize}
+
+\textit{ \textbf{Objetivos específicos}}
+\begin{itemize}
+
+    \item[-] Algún objetivo secundario que sirve para poder lograr el objetivo general,
+    \item[-] Algún objetivo secundario que sirve para poder lograr el objetivo general,
+    \item[-] Algún objetivo secundario que sirve para poder lograr el objetivo general.
+    \end{itemize}
+
+\section{Itroducción}
+Contenido de la sección INTRODUCCIÓN; al igual que el resto del documento, debe respetar el formato de fuente, márgenes e interlineado. En esta sección se presenta qué cosas (instrumentos, métodos, etc.) existen para resolver problemáticas similares a la presentada en el objetivo.
+
+\section{Sección X}
+Todas las figuras deben estar en buena calidad, ser perfectamente visibles. Todas las imágenes deben llevar pie de foto con número y nombre; debe hacerse referencia a la figura dentro del texto.
+
+\section{Sección Y}
+Las tablas que se incluyan en el reporte deberán estar numerados y nombradas en la parte superior de la tabla.  Deberá hacerse referencia a la tabla dentro del cuerpo del texto.
+
+\section{Conclusiones}
+En esta sección se presentan las conclusiones derivadas del proyecto final.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Referencias}
+\bibliographystyle{ieeetr}
+\bibliography{referencias}
+
+%-------------------------------------------------
+%Final del documento
+%-------------------------------------------------
+
+\end{document}
+
